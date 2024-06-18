@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-16T01:37:45.250337+00:00",
+  "timestamp": "2024-06-18T01:26:10.386282+00:00",
   "repo": "ietf-wg-wimse/draft-ietf-wimse-arch",
   "labels": [
     {
@@ -87,15 +87,15 @@
       "id": "I_kwDOLPTb0M5_oMpV",
       "title": "Basic text on use cases and architecture",
       "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-arch/issues/4",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "jsalowey",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Need basic start to use cases and/or architecture. \r\n\r\nMicroservice to Microservice authentication\r\nCarrying Context\r\netc. \r\n\r\n",
       "createdAt": "2024-02-18T23:48:28Z",
-      "updatedAt": "2024-02-18T23:48:28Z",
-      "closedAt": null,
+      "updatedAt": "2024-06-17T15:44:53Z",
+      "closedAt": "2024-06-17T15:44:53Z",
       "comments": []
     },
     {
@@ -119,30 +119,40 @@
       "id": "I_kwDOLPTb0M6Cl4Sg",
       "title": "Add diagram that shows workload-to-workload interaction",
       "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-arch/issues/16",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "PieterKas",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Figure 1 does a great job at describing the workload/agent/server architecture. It may be helpful to have an additional figure showing workload-to-workload interaction, including things like crossing trust domains.",
       "createdAt": "2024-03-18T00:06:45Z",
-      "updatedAt": "2024-03-18T00:06:45Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-06-17T15:46:39Z",
+      "closedAt": "2024-06-17T15:46:38Z",
+      "comments": [
+        {
+          "author": "yaroslavros",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Figure 2 added",
+          "createdAt": "2024-06-17T15:46:38Z",
+          "updatedAt": "2024-06-17T15:46:38Z"
+        }
+      ]
     },
     {
       "number": 17,
       "id": "I_kwDOLPTb0M6Cl7i5",
-      "title": "Initial Workload Identity -> Workload Identity",
+      "title": "Definition of Workload Identity",
       "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-arch/issues/17",
       "state": "OPEN",
       "author": "PieterKas",
       "authorAssociation": "NONE",
-      "assignees": [],
+      "assignees": [
+        "jsalowey"
+      ],
       "labels": [],
       "body": "Suggest renaming to Workload Identity to define workload identiy concept and perhaps have a subsection to discuss initial identity bootstrapping, or have a identity bootstrapping section describing how server, agent and workload identity is bootstrapped.",
       "createdAt": "2024-03-18T00:18:06Z",
-      "updatedAt": "2024-03-18T00:18:06Z",
+      "updatedAt": "2024-06-17T15:58:56Z",
       "closedAt": null,
       "comments": []
     },
@@ -154,11 +164,13 @@
       "state": "OPEN",
       "author": "PieterKas",
       "authorAssociation": "NONE",
-      "assignees": [],
+      "assignees": [
+        "yaroslavros"
+      ],
       "labels": [],
       "body": "Section focus on authentication, but also talks about authorization, audit trails (typo) and service context (the latter is addressed as its own section). Perhaps also break out authorization and audit trails as their own sections.",
       "createdAt": "2024-03-18T00:21:22Z",
-      "updatedAt": "2024-03-18T00:21:22Z",
+      "updatedAt": "2024-06-17T15:58:32Z",
       "closedAt": null,
       "comments": []
     },
@@ -170,11 +182,13 @@
       "state": "OPEN",
       "author": "PieterKas",
       "authorAssociation": "NONE",
-      "assignees": [],
+      "assignees": [
+        "jsalowey"
+      ],
       "labels": [],
       "body": "Perhaps consider using similar terminology as in the OAuth cross-domain authorization draft? Also worth cosnidering using languagge like \"Trust boundary\" instead of \"administrative boudnary\" as different trust domains may be administered by the same entities, but trust is segmented on purpose to minimise blast radius in cases of compromise etc.",
       "createdAt": "2024-03-18T00:23:43Z",
-      "updatedAt": "2024-03-18T00:23:43Z",
+      "updatedAt": "2024-06-17T16:00:12Z",
       "closedAt": null,
       "comments": []
     },
@@ -210,11 +224,13 @@
       "state": "OPEN",
       "author": "yaroslavros",
       "authorAssociation": "COLLABORATOR",
-      "assignees": [],
+      "assignees": [
+        "hannestschofenig"
+      ],
       "labels": [],
       "body": "We should add graphical representation of attestation process to simplify reader understanding",
       "createdAt": "2024-03-20T23:03:33Z",
-      "updatedAt": "2024-03-20T23:03:33Z",
+      "updatedAt": "2024-06-17T15:59:41Z",
       "closedAt": null,
       "comments": []
     },
@@ -226,11 +242,13 @@
       "state": "OPEN",
       "author": "yaroslavros",
       "authorAssociation": "COLLABORATOR",
-      "assignees": [],
+      "assignees": [
+        "hannestschofenig"
+      ],
       "labels": [],
       "body": "Lets use consistent terminology with RATS or at least refer to RATS terminology where applicable",
       "createdAt": "2024-03-20T23:04:59Z",
-      "updatedAt": "2024-03-20T23:04:59Z",
+      "updatedAt": "2024-06-17T15:57:20Z",
       "closedAt": null,
       "comments": []
     },
@@ -255,16 +273,31 @@
       "id": "I_kwDOLPTb0M6H3kCv",
       "title": "Discussion Venues",
       "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-arch/issues/31",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "yaronf",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Please update the venue.",
       "createdAt": "2024-05-05T11:53:04Z",
-      "updatedAt": "2024-05-05T11:53:04Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2024-06-17T21:35:43Z",
+      "closedAt": "2024-06-17T15:53:15Z",
+      "comments": [
+        {
+          "author": "yaroslavros",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Resolved by Justin",
+          "createdAt": "2024-06-17T15:53:15Z",
+          "updatedAt": "2024-06-17T15:53:15Z"
+        },
+        {
+          "author": "yaronf",
+          "authorAssociation": "NONE",
+          "body": "But the GitHub repo mentioned in the draft is still the old one.",
+          "createdAt": "2024-06-17T21:35:43Z",
+          "updatedAt": "2024-06-17T21:35:43Z"
+        }
+      ]
     },
     {
       "number": 32,
@@ -274,11 +307,13 @@
       "state": "OPEN",
       "author": "yaronf",
       "authorAssociation": "NONE",
-      "assignees": [],
+      "assignees": [
+        "hannestschofenig"
+      ],
       "labels": [],
       "body": "The wording here (Sec. 2) cannot be (and IMO, should be) distinguished from \"workload authentication\", where the basic identity of the workload is validated, even in the absence of any trusted environment.\r\n",
       "createdAt": "2024-05-05T11:53:55Z",
-      "updatedAt": "2024-05-05T11:53:55Z",
+      "updatedAt": "2024-06-17T15:56:11Z",
       "closedAt": null,
       "comments": []
     },
@@ -290,11 +325,31 @@
       "state": "OPEN",
       "author": "yaronf",
       "authorAssociation": "NONE",
-      "assignees": [],
+      "assignees": [
+        "yaroslavros"
+      ],
       "labels": [],
       "body": "Sec. 3.2.1 has \"authorization\" in the title, but really focuses on authentication. We should mention that the architecture needs to support authz policies within each trust domain, starting with the basic \"service A is allowed to call service B\". Any workload should be able to include a policy enforcement point (PEP) for incoming requests. There are also cases where a workload needs to be a PEP for outgoing requests, e.g. when calling \"passive\" resources such as data objects.",
       "createdAt": "2024-05-05T11:54:23Z",
-      "updatedAt": "2024-05-05T11:54:23Z",
+      "updatedAt": "2024-06-17T15:56:44Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 34,
+      "id": "I_kwDOLPTb0M6Mh6A9",
+      "title": "Workload Identity Token",
+      "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-arch/issues/34",
+      "state": "OPEN",
+      "author": "hannestschofenig",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [
+        "jsalowey"
+      ],
+      "labels": [],
+      "body": "Add terminology",
+      "createdAt": "2024-06-17T15:57:55Z",
+      "updatedAt": "2024-06-17T15:59:08Z",
       "closedAt": null,
       "comments": []
     }
