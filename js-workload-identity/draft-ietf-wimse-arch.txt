@@ -182,7 +182,8 @@ Table of Contents
    the authority for the Trust Domain.  The Workload Identifier is used
    to associate additional identity attributes to the workload through
    the use of tokens (workload attribute tokens?) or online look up
-   services.
+   services.  The Workload Identifier may also be used directly in
+   authorization calculations and audit logs.
 
    The Trust Domain consists of a string that matches the format of a
    fully qualified domain name.  It is the intent that a Trust Domain is
