@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-18T01:26:10.386282+00:00",
+  "timestamp": "2024-06-20T01:24:11.370212+00:00",
   "repo": "ietf-wg-wimse/draft-ietf-wimse-arch",
   "labels": [
     {
@@ -1145,6 +1145,58 @@
       "mergeCommit": {
         "oid": "6ebcb89502abf72365504ae5b2338c841a12ae7c"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 35,
+      "id": "PR_kwDOLPTb0M5y-E-z",
+      "title": "Propose to add one use case of security context establishment and propagation ",
+      "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-arch/pull/35",
+      "state": "OPEN",
+      "author": "maxpassion",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Propose to add one use case of security context establishment and propagation.",
+      "createdAt": "2024-06-19T14:10:07Z",
+      "updatedAt": "2024-06-19T14:10:07Z",
+      "baseRepository": "ietf-wg-wimse/draft-ietf-wimse-arch",
+      "baseRefName": "main",
+      "baseRefOid": "a24b63e07b642cd2693dfa075592cbd65c93d26d",
+      "headRepository": "maxpassion/draft-ietf-wimse-arch",
+      "headRefName": "patch-2",
+      "headRefOid": "644fac6f64ba98ef62a608e277475b5a9b740dc0",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 36,
+      "id": "PR_kwDOLPTb0M5zA2yK",
+      "title": "Initial workload identity section",
+      "url": "https://github.com/ietf-wg-wimse/draft-ietf-wimse-arch/pull/36",
+      "state": "OPEN",
+      "author": "jsalowey",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Define workload identity.  Resolves issue #17 ",
+      "createdAt": "2024-06-20T00:56:08Z",
+      "updatedAt": "2024-06-20T01:09:34Z",
+      "baseRepository": "ietf-wg-wimse/draft-ietf-wimse-arch",
+      "baseRefName": "main",
+      "baseRefOid": "a24b63e07b642cd2693dfa075592cbd65c93d26d",
+      "headRepository": "ietf-wg-wimse/draft-ietf-wimse-arch",
+      "headRefName": "js-workload-identity",
+      "headRefOid": "e0b66f7693af2c0e4e8beb37e44f24139cb41d35",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
