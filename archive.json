@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-20T01:24:11.370212+00:00",
+  "timestamp": "2024-06-23T01:36:32.102380+00:00",
   "repo": "ietf-wg-wimse/draft-ietf-wimse-arch",
   "labels": [
     {
@@ -1186,7 +1186,7 @@
       "labels": [],
       "body": "Define workload identity.  Resolves issue #17 ",
       "createdAt": "2024-06-20T00:56:08Z",
-      "updatedAt": "2024-06-20T01:09:34Z",
+      "updatedAt": "2024-06-21T13:32:25Z",
       "baseRepository": "ietf-wg-wimse/draft-ietf-wimse-arch",
       "baseRefName": "main",
       "baseRefOid": "a24b63e07b642cd2693dfa075592cbd65c93d26d",
@@ -1197,7 +1197,15 @@
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "jricher",
+          "authorAssociation": "COLLABORATOR",
+          "body": "The section talks about identity then defines identifier -- I would recommend it separate things a little more and clarify the differences and relationship. Is the identifier part of the identity? Does it point to the overall identity? Augment it?",
+          "createdAt": "2024-06-21T13:32:25Z",
+          "updatedAt": "2024-06-21T13:32:25Z"
+        }
+      ],
       "reviews": []
     }
   ]
