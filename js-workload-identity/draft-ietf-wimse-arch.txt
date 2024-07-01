@@ -5,9 +5,9 @@
 Workload Identity in Multi System Environments                J. Salowey
 Internet-Draft                                                    Venafi
 Intended status: Informational                              Y. Rosomakho
-Expires: 22 December 2024                                        Zscaler
+Expires: 2 January 2025                                          Zscaler
                                                            H. Tschofenig
-                                                            20 June 2024
+                                                             1 July 2024
 
 
   Workload Identity in a Multi System Environment (WIMSE) Architecture
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 December 2024.
+   This Internet-Draft will expire on 2 January 2025.
 
 Copyright Notice
 
@@ -175,21 +175,29 @@ Table of Contents
 3.1.  Workload Identity
 
    A workload identity may be composed of many attributes describing
-   different aspects of a workload.  This section describes a Workload
-   Identifier consisting of a concise string allocated within a
-   namespace defined by a Trust Domain.  This Workload Identifier is
+   different aspects of a workload.  These attributes may describe
+   different sets of information such as a workload's role within a
+   system, the software that the workload runs or the hardware that the
+   workload runs on.  Sets of attributes may be determined by different
+   authorities running in different parts of the system.  WIMSE defines
+   a *Workload Identifier* to used in representing and referencing the
+   workload.  It allows different authorities of sets identity
+   attributes to reference the workload in a consistent way.
+
+   The Workload Identifier consists of a concise string allocated within
+   a namespace defined by a Trust Domain.  This Workload Identifier is
    present in Workload Identity Tokens and X.509 certificates issued by
    the authority for the Trust Domain.  The Workload Identifier is used
    to associate additional identity attributes to the workload through
    the use of tokens (workload attribute tokens?) or online look up
-   services.  The Workload Identifier may also be used directly in
-   authorization calculations and audit logs.
+   services.  It may also be used directly in authorization calculations
+   and audit logs.
 
    The Trust Domain consists of a string that matches the format of a
    fully qualified domain name.  It is the intent that a Trust Domain is
    actually a domain name registered to the organization defining the
    Trust Domain, but this may not be true in all cases.  The Trust
-   Domain also specifies the issuer of cryptographically signed Workload
+   Domain also maps to the issuer of cryptographically signed Workload
    Identity Tokens (WIT) or X.509 Certificate.  The association between
    a Trust Domain and the cryptographic root of the signing authority
    for that Trust Domain must be made securely through an out-of-band
@@ -210,6 +218,9 @@ Table of Contents
    form of X.509 certificates and Workload Identity Tokens.
 
 3.1.1.  Bootstrapping Workload Identity
+
+   [TODO: this section will need to be updated to discuss workload
+   identifier as a concept as well]
 
    A workload needs to obtain its identity early in its lifecycle.  This
    identity is sometimes referred to as the "bottom turtle" on which
@@ -509,9 +520,9 @@ Table of Contents
    [I-D.ietf-oauth-transaction-tokens]
               Tulshibagwale, A., Fletcher, G., and P. Kasselman,
               "Transaction Tokens", Work in Progress, Internet-Draft,
-              draft-ietf-oauth-transaction-tokens-01, 16 March 2024,
+              draft-ietf-oauth-transaction-tokens-02, 21 June 2024,
               <https://datatracker.ietf.org/doc/html/draft-ietf-oauth-
-              transaction-tokens-01>.
+              transaction-tokens-02>.
 
 Acknowledgments
 
