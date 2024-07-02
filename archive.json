@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-30T01:38:46.068166+00:00",
+  "timestamp": "2024-07-02T01:32:55.462107+00:00",
   "repo": "ietf-wg-wimse/draft-ietf-wimse-arch",
   "labels": [
     {
@@ -1186,13 +1186,13 @@
       "labels": [],
       "body": "Define workload identity.  Resolves issue #17 ",
       "createdAt": "2024-06-20T00:56:08Z",
-      "updatedAt": "2024-06-21T13:32:25Z",
+      "updatedAt": "2024-07-01T20:23:05Z",
       "baseRepository": "ietf-wg-wimse/draft-ietf-wimse-arch",
       "baseRefName": "main",
       "baseRefOid": "a24b63e07b642cd2693dfa075592cbd65c93d26d",
       "headRepository": "ietf-wg-wimse/draft-ietf-wimse-arch",
       "headRefName": "js-workload-identity",
-      "headRefOid": "e0b66f7693af2c0e4e8beb37e44f24139cb41d35",
+      "headRefOid": "76a778dc52322bfd0c50a4df5027ee75931e2d4f",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -1204,6 +1204,13 @@
           "body": "The section talks about identity then defines identifier -- I would recommend it separate things a little more and clarify the differences and relationship. Is the identifier part of the identity? Does it point to the overall identity? Augment it?",
           "createdAt": "2024-06-21T13:32:25Z",
           "updatedAt": "2024-06-21T13:32:25Z"
+        },
+        {
+          "author": "jsalowey",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@jricher  - I modified the section to differentiate workload identity and identifier a bit more.  Let me know if it looks good enough to merge in as a straw man for the identity section. IN any case we can discuss in the 120 meeting ",
+          "createdAt": "2024-07-01T20:23:04Z",
+          "updatedAt": "2024-07-01T20:23:04Z"
         }
       ],
       "reviews": []
